@@ -1,3 +1,4 @@
 # Add ignore's
 bot
 .env
+*.log
