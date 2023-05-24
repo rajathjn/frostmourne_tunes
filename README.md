@@ -1,12 +1,32 @@
 # Python_Music_Bot_Discord
- Discord Music Bot made using python
+Discord Music Bot made using python
 
 ## Status
-Songs are getting added.
-But not playing
+The Bot is correctly working!!
 
-## Add token to .env file
+## Using the Bot
+
+### Add token to .env file
 Content in .env file should look like
 ```ini
-TOKEN={{ your unique key }}
+[Discord]
+TOKEN={{ Discord token }}
+
+[Spotify]
+CLIENT_ID={{ Spotify Client ID }}
+CLIENT_SECRET={{ Spotify Client Secret }}
 ```
+
+### Setup a python virtual environment
+```bash
+python -m venv bot
+```
+Activate the virtual environment.
+Install the requirements from `requirements.txt`
+
+### Run the script
+Run the script and start the music in you're discord channels!!
+
+## Contributing
+
+Make sure to install all the modules in `pre-commit-req.txt` and run the pre-commits before any request.
