@@ -8,16 +8,20 @@ from typing import Optional
 import numpy as np
 from configparser import ConfigParser
 import logging
+import os
+
+# Create folder for Logs
+if not os.path.exists("Logs"):
+    os.makedirs("Logs")
 
 # Create and configure logger
 logging.basicConfig(
-    filename="Frostmourne_tunes_logs.log",
+    filename=f"Logs/Frostmourne_tunes_logs_{datetime.datetime.today().strftime('%Y_%m_%d_%H%M%S')}.log",
     format="%(asctime)s - %(name)s - %(levelname)s - %(message)s",
     level=logging.INFO,
     filemode="w",
 )
 log = logging.getLogger()
-
 
 config = ConfigParser()
 config.read(".env")
