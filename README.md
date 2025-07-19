@@ -1,4 +1,4 @@
-# Python_Music_Bot_Discord
+# Frostmourne Tunes
 Discord Music Bot made using python
 
 ## Status
