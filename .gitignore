@@ -1,4 +1,13 @@
-# Add ignore's
-bot
+# Add ignore rules for common files and directories
+
+# files
 .env
 *.log
+*.py[cod]
+
+# directories
+.venv
+__pycache__
+.ruff_cache
+.vscode
+.idea
